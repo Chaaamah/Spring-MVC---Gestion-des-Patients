@@ -16,14 +16,14 @@
                 <div class="card-header bold">Liste des patients</div>
                 <div class="card-body">
                     <form method="get" th:action="@{index}">
-                        <label> Key Word</label>
+                        <label> Mot cle :</label>
                         <input type="text" name="keyword" th:value="${keyword}">
                         <button type="submit" class="btn btn-primary">Chercher</button>
                     </form>
 
 
                     <table class="table">
-                        <thead>
+                        <thead class="border-bottom-5 border-black">
                             <tr>
                                 <th>ID</th>
                                 <th>Nom</th>
